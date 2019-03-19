@@ -14,7 +14,7 @@ let sharedStreamController = StreamController()
 
 class StreamController{
     
-//    static let player = SPTAudioStreamingController(clientId: Constants.clientID)
+    //static let player = SPTAudioStreamingController(clientId: Constants.clientID)
     //let spotifyPlayer : SPTAudioStreamingController
     let SCAController : SPTCoreAudioController
     //connectOutputBus:ofNode:toInputBus:ofNode:inGraph:error:
@@ -197,8 +197,6 @@ class SCSPTController : SPTCoreAudioController {
         AudioUnitSetParameter(revbUnit!, kReverb2Param_DryWetMix, kAudioUnitScope_Global, 0, params[0] as! AudioUnitParameterValue, 0)
         
     }
-    
-    
     
     func debugLineAccess(){
         print("nothing")

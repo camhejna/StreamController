@@ -26,8 +26,6 @@ class LibraryTableViewController : UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         //self.tableView.delegate = self
         
-        
-        
         setupLibrary()
     }
 
@@ -177,7 +175,7 @@ class LibraryTableViewController : UITableViewController {
                 //TODO:
                 print("Got the tracks!")
                 self.trackURIs = (session as! SPTListPage).items as! [SPTSavedTrack]
-                print("nothin")
+                print("no errors")
                 
 
                     for i in 0..<self.trackURIs.count {
@@ -193,19 +191,6 @@ class LibraryTableViewController : UITableViewController {
             
         })
         
-        
-        
-        
-        
-        
-        
-        
     }
     
-    
-
-    
-    
-    
-
 }

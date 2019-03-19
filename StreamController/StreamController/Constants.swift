@@ -9,7 +9,7 @@
 import Foundation
 
 struct Constants{
-    static let clientID = "7460bda4520d4dccb529671369c24922"
+    static let clientID = "b73c0177f8784e4c98902b4788d72bc6"
     static let redirectURI = URL(string: "streamcontroller://callback/")!
     static let sessionKey = "spotifySessionKey"
     static var accessToken = "tbd"

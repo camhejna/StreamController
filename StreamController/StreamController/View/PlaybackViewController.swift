@@ -18,7 +18,6 @@ class PlaybackViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         //testPlaySpotify()
     }
@@ -28,26 +27,10 @@ class PlaybackViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-    //func to test spotify player is working correctly
+    //hidden button func to test spotify player is working correctly
     func testPlaySpotify(){
         print("testPlaySpotify()")
         SPTAudioStreamingController.sharedInstance().playSpotifyURI("spotify:track:74z2lfZ7fj3IqoK71lHkZw", startingWith: 0, startingWithPosition: 0, callback: nil)
-        
-//        DispatchQueue.main.async {
-//            //sleep(4)
-//            self.updateUI()
-//        }
     }
 
     @IBAction func musicTestButtonPressed(_ sender: Any) {
@@ -58,11 +41,8 @@ class PlaybackViewController: UIViewController {
     
     @IBAction func playPauseButtonPressed(_ sender: Any) {
         
-        //if SPTAudioStreamingController.sharedInstance().playbackState
-        
-        //SPTAudioStreamingController.sharedInstance().setIsPlaying(false, callback: nil)
-        
-        print(SPTAudioStreamingController.sharedInstance().playbackState)
+        SPTAudioStreamingController.sharedInstance()?.setIsPlaying(!SPTAudioStreamingController.sharedInstance().playbackState.isPlaying, callback: nil)
+
     }
     
     @IBAction func updateButtonPressed(_ sender: Any) {

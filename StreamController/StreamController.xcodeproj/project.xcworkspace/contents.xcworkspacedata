@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/cameronhejna/Documents/University/20181/ITP-344/HW/final/StreamController/StreamController/View/KeychainWrapper">
-   </FileRef>
-   <FileRef
-      location = "group:../StreamController/SecuredKeychain-Bridging-Header.h">
-   </FileRef>
-   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>
